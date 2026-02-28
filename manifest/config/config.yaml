@@ -1,0 +1,50 @@
+server:
+  address: ":8080"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+  logPath: "./storage/logs/server"
+
+logger:
+  path: "./storage/logs"
+  level: "all"
+  stdout: true
+
+database:
+  default:
+    type: "pgsql"
+    host: "127.0.0.1"
+    port: "5432"
+    user: "ordersystem"
+    pass: "ordersystem123"
+    name: "ordersystem"
+    charset: "utf8"
+    maxIdle: 10
+    maxOpen: 100
+    maxLifetime: "30s"
+
+redis:
+  default:
+    address: "127.0.0.1:6379"
+    db: 0
+
+app:
+  jwt:
+    secret: "ordersystem-jwt-secret-change-in-production"
+    expire: 86400
+    adminExpire: 7200
+  wechat:
+    appId: "wx_your_app_id"
+    appSecret: "your_app_secret"
+  upload:
+    path: "./storage/uploads"
+    maxSize: 10485760
+  rateLimit:
+    requests: 100
+    window: 60
+  points:
+    orderRate: 1
+    reviewReward: 10
+  membership:
+    silverThreshold: 1000
+    goldThreshold: 5000
+    platinumThreshold: 20000

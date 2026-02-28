@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="abea84c0-be05-4f58-8177-06aeb7e0dc45" name="10.0.6.215">
+        <fileTransfer rootFolder="/root/dylan/orderSystem" accessType="SFTP" host="10.0.6.215" port="22" sshConfigId="ebb680da-92e2-4c9d-b337-bb100e3d02bd" sshConfig="root@10.0.6.215:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
